@@ -5,12 +5,23 @@ namespace CatchButton
         public Form1()
         {
             InitializeComponent();
+
+            // 시작 시 리스타트 버튼 숨기기
+            RestartButton.Visible = false;
+
+            //버튼의 초기 크기/위치 저장
+            frButtonSize = CatchButten.Size;
+            frButtonLocation = CatchButten.Location;
         }
         //게임 기본 점수
         int score = 1000;
 
         //게임 목숨
         int HP = 20;
+
+        // 초기 버튼 사이즈와 위치 저장
+        private Size frButtonSize;
+        private Point frButtonLocation;
 
         private void CatchButten_MouseEnter(object sender, EventArgs e)
         {
@@ -50,9 +61,12 @@ namespace CatchButton
 
                 //게임 오버 시 버튼 비활성화   
                 CatchButten.Enabled = false;
+
+                // 리스타트 버튼 표시
+                RestartButton.Visible = true;
             }
             //점수 표시 및 목숨 표시
-            this.Text = "점수 : " + score + "남은 목숨:" +HP;
+            this.Text = "점수 : " + score + "남은 목숨:" + HP;
         }
 
         private void CatchButten_Click(object sender, EventArgs e)
@@ -70,8 +84,27 @@ namespace CatchButton
             this.Text = "점수 : " + score + "남은 목숨:" + HP;
 
             //클릭후 버튼 크기 감소
-            CatchButten.Width=(int)(CatchButten.Width*0.9);
-            CatchButten.Height=(int)(CatchButten.Height*0.9);
-            }
+            CatchButten.Width = (int)(CatchButten.Width * 0.9);
+            CatchButten.Height = (int)(CatchButten.Height * 0.9);
+        }
+
+        //게임 상태 초기화
+        private void RestartButton_Click_1(object sender, EventArgs e)
+        {
+            // 초기값 복원
+            score = 1000;
+            HP = 20;
+
+            // 버튼 활성화 및 크기/위치 초기화
+            CatchButten.Enabled = true;
+            CatchButten.Size = frButtonSize;
+            CatchButten.Location = frButtonLocation;
+
+            // 리스타트 버튼 숨기기
+            RestartButton.Visible = false;
+
+            // 점수 및 목숨 표시 갱신
+            this.Text = "점수 : " + score + " 남은 목숨:" + HP;
+        }
     }
 }
