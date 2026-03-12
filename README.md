@@ -21,4 +21,7 @@
 시작시 재시작 버튼 숨김
 <img width="1709" height="913" alt="image" src="https://github.com/user-attachments/assets/419316e9-5c8d-4b72-a7be-e129d46cd61d" />
 목숨이 다 되어 게임 오버시 "나를 잡아봐" 버튼 비활성화 및 재시작 버튼 활성화
+
 - ## 구현시 어려웠던 점
+- 재시작 버튼을 비활성화 했다가 게임 오버시 나타는 기능을 구현하는 법을 몰라 힘들었다.(RestartButton.Visible = ;)로 구현
+- 재시작시 초기값을 하드코딩으로 하지 않고 저장 시켰다가 재시작시 불러오는 기능를 구현하는데 어려움이 있었다.(frButtonSize = CatchButten.Size;)를 사용해 초기 값을 frButtonSize에 저장하고 불러올 때 frButtonSize의 값을 불러옴
