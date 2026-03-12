@@ -6,6 +6,8 @@ namespace CatchButton
         {
             InitializeComponent();
         }
+        //게임 기본 점수
+        int score = 1000;
 
         private void CatchButten_MouseEnter(object sender, EventArgs e)
         {
@@ -31,14 +33,27 @@ namespace CatchButton
         {
             //놓쳤을 때 효과음 재생
             System.Media.SystemSounds.Hand.Play();
+
+            //놓쳤을 때 점수감소
+            score -= 10;
+
+            //점수 표시
+            this.Text = "점수 : " + score;
         }
 
         private void CatchButten_Click(object sender, EventArgs e)
         {
             // 잡았을 때 효과음 재생
             System.Media.SystemSounds.Exclamation.Play();
+
             //잡았을 때 축하메시지 출력
             MessageBox.Show("축하합니다~!");
+
+            //잡았을 때 점수 증가
+            score += 100;
+
+            //점수 표시
+            this.Text = "점수 : " + score;
 
         }
     }
