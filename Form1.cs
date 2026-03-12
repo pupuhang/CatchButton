@@ -9,6 +9,9 @@ namespace CatchButton
         //게임 기본 점수
         int score = 1000;
 
+        //게임 목숨
+        int HP = 20;
+
         private void CatchButten_MouseEnter(object sender, EventArgs e)
         {
             // 난수생성기준비
@@ -37,8 +40,19 @@ namespace CatchButton
             //놓쳤을 때 점수감소
             score -= 10;
 
-            //점수 표시
-            this.Text = "점수 : " + score;
+            //놓쳤을 때 목숨감소
+            HP -= 1;
+
+            //목숨이 0이 되면 게임 오버 메세지 출력
+            if (HP < 1)
+            {
+                MessageBox.Show("게임 오버");
+
+                //게임 오버 시 버튼 비활성화   
+                CatchButten.Enabled = false;
+            }
+            //점수 표시 및 목숨 표시
+            this.Text = "점수 : " + score + "남은 목숨:" +HP;
         }
 
         private void CatchButten_Click(object sender, EventArgs e)
@@ -52,8 +66,8 @@ namespace CatchButton
             //잡았을 때 점수 증가
             score += 100;
 
-            //점수 표시
-            this.Text = "점수 : " + score;
+            //점수 표시 및 목숨 표시
+            this.Text = "점수 : " + score + "남은 목숨:" + HP;
 
             //클릭후 버튼 크기 감소
             CatchButten.Width=(int)(CatchButten.Width*0.9);
