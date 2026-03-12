@@ -5,9 +5,11 @@
 ## 실행화면
 - 1단계 코드의 실행 스크린샷
 - <img width="1709" height="913" alt="image" src="https://github.com/user-attachments/assets/aa1b99d1-d66a-45a0-809c-80371cf5aad0" />
+커서가 "나를 잡아봐" 버튼에 올라가면 버튼이 화면 밖으로 나가지 않는 선에서 랜덤 좌표로 버튼이 이동함
 
 - 2단계 코드의 실행 스크린샷
 - <img width="1715" height="921" alt="image" src="https://github.com/user-attachments/assets/504ab25b-35ff-458e-bbd0-06b743c8b84c" />
+버튼을 잡았을 떄 와 놓쳤을 때 사운드 추가 했으나 실습실 환경에선 사운드 출력할 수단이 없어 작동여부는 확인 불가했음 추후 확인 예정, 잡았을 때 축하 메세지를 출력함
 
 - 3단계 코드의 실행 스크린샷
 - 4단계 코드의 실행 스크린샷
