@@ -12,6 +12,10 @@
 버튼을 잡았을 떄 와 놓쳤을 때 사운드 추가 했으나 실습실 환경에선 사운드 출력할 수단이 없어 작동여부는 확인 불가했음 추후 확인 예정, 잡았을 때 축하 메세지를 출력함
 
 - 3단계 코드의 실행 스크린샷
+- <img width="1712" height="921" alt="image" src="https://github.com/user-attachments/assets/9563cd8e-59bc-4335-aa9a-1cc09a72d159" />
+<img width="1703" height="914" alt="image" src="https://github.com/user-attachments/assets/f74d43eb-71c0-4fa0-86e9-5999a7326499" />
+기본 점수 1000점, 잡았을시 +100, 놓쳤을시-10으로 점수 구현, 한 번 잡으면 버튼 크기가 10%가 줄어들게 구현, 구현 확인을 편하게 하기 위해 임시로 랜덤 좌표를 0,0르로 고정 함
+
 - 4단계 코드의 실행 스크린샷
 
 - ## 구현시 어려웠던 점
