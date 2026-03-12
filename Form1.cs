@@ -16,11 +16,11 @@ namespace CatchButton
             int maxX = this.ClientSize.Width - CatchButten.Width;
             int maxY = this.ClientSize.Height - CatchButten.Height;
 
-            // 랜덤좌표추출 (0 ~ 최대가용치사이)
+            // 랜덤좌표추출 (0 ~ 가용영역)
             int nextX = rd.Next(0, maxX);
             int nextY = rd.Next(0, maxY);
 
-            // 랜덤 위치할당 (새로운Point 객체생성)
+            // 랜덤 위치할당 (새로운 Point 객체생성)
             CatchButten.Location = new Point(nextX, nextY);
 
             // 시각적 피드백(폼 제목표시줄에 좌표출력)
@@ -29,12 +29,15 @@ namespace CatchButton
 
         private void CatchButten_MouseLeave(object sender, EventArgs e)
         {
+            //놓쳤을 때 효과음 재생
             System.Media.SystemSounds.Hand.Play();
         }
 
         private void CatchButten_Click(object sender, EventArgs e)
         {
+            // 잡았을 때 효과음 재생
             System.Media.SystemSounds.Exclamation.Play();
+            //잡았을 때 축하메시지 출력
             MessageBox.Show("축하합니다~!");
 
         }
