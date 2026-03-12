@@ -33,6 +33,7 @@
             // 
             // CatchButten
             // 
+            CatchButten.Cursor = Cursors.Hand;
             CatchButten.Font = new Font("메이플스토리", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
             CatchButten.ForeColor = Color.Blue;
             CatchButten.Location = new Point(340, 153);
@@ -42,6 +43,7 @@
             CatchButten.Text = "나를 잡아봐";
             CatchButten.UseVisualStyleBackColor = true;
             CatchButten.MouseEnter += CatchButten_MouseEnter;
+            CatchButten.MouseLeave += CatchButten_MouseLeave;
             // 
             // Form1
             // 
