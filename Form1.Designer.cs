@@ -42,6 +42,7 @@
             CatchButten.TabIndex = 0;
             CatchButten.Text = "나를 잡아봐";
             CatchButten.UseVisualStyleBackColor = true;
+            CatchButten.Click += CatchButten_Click;
             CatchButten.MouseEnter += CatchButten_MouseEnter;
             CatchButten.MouseLeave += CatchButten_MouseLeave;
             // 
@@ -52,7 +53,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(CatchButten);
             Name = "Form1";
-            Text = "Form1";
+            Text = "술래잡기";
             ResumeLayout(false);
         }
 
