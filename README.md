@@ -17,5 +17,8 @@
 기본 점수 1000점, 잡았을시 +100, 놓쳤을시-10으로 점수 구현, 한 번 잡으면 버튼 크기가 10%가 줄어들게 구현, 구현 확인을 편하게 하기 위해 임시로 랜덤 좌표를 0,0르로 고정 함
 
 - 4단계 코드의 실행 스크린샷
-
+<img width="1704" height="916" alt="image" src="https://github.com/user-attachments/assets/6a19fd1f-0004-403d-9431-224b73e23e14" />
+시작시 재시작 버튼 숨김
+<img width="1709" height="913" alt="image" src="https://github.com/user-attachments/assets/419316e9-5c8d-4b72-a7be-e129d46cd61d" />
+목숨이 다 되어 게임 오버시 "나를 잡아봐" 버튼 비활성화 및 재시작 버튼 활성화
 - ## 구현시 어려웠던 점
