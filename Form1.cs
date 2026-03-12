@@ -55,6 +55,9 @@ namespace CatchButton
             //점수 표시
             this.Text = "점수 : " + score;
 
-        }
+            //클릭후 버튼 크기 감소
+            CatchButten.Width=(int)(CatchButten.Width*0.9);
+            CatchButten.Height=(int)(CatchButten.Height*0.9);
+            }
     }
 }

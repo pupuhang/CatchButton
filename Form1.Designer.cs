@@ -38,7 +38,7 @@
             CatchButten.ForeColor = Color.Blue;
             CatchButten.Location = new Point(340, 153);
             CatchButten.Name = "CatchButten";
-            CatchButten.Size = new Size(131, 51);
+            CatchButten.Size = new Size(199, 99);
             CatchButten.TabIndex = 0;
             CatchButten.Text = "나를 잡아봐";
             CatchButten.UseVisualStyleBackColor = true;
