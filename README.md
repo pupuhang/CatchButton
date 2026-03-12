@@ -14,7 +14,7 @@
 - 3단계 코드의 실행 스크린샷
 - <img width="1712" height="921" alt="image" src="https://github.com/user-attachments/assets/9563cd8e-59bc-4335-aa9a-1cc09a72d159" />
 <img width="1703" height="914" alt="image" src="https://github.com/user-attachments/assets/f74d43eb-71c0-4fa0-86e9-5999a7326499" />
-기본 점수 1000점, 잡았을시 +100, 놓쳤을시-10으로 점수 구현, 한 번 잡으면 버튼 크기가 10%가 줄어들게 구현, 구현 확인을 편하게 하기 위해 임시로 랜덤 좌표를 0,0르로 고정 함
+기본 점수 1000점, 잡았을시 +100, 놓쳤을시-10으로 점수 구현, 한 번 잡으면 버튼 크기가 10%가 줄어들게 구현, 구현 확인을 편하게 하기 위해 임시로 랜덤 좌표를 (0,0)으로 고정 함
 
 - 4단계 코드의 실행 스크린샷
 <img width="1704" height="916" alt="image" src="https://github.com/user-attachments/assets/6a19fd1f-0004-403d-9431-224b73e23e14" />
